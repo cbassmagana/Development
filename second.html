@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Workflow</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<head>
+    <style>
+
+.table-outline {
+            border-collapse: collapse;
+            width: 1000px; /* Adjust the width as needed */
+            margin: 30px; /* Adjust margin as needed */
+            margin-left: 250px;
+        }
+
+        .table-outline th,
+        .table-outline td {
+            border: 2px solid #000; /* Border style */
+            padding: 30px; /* Adjust padding as needed */
+            text-align: center; /* Center-align the content */
+            height:68px;
+            width: 200px;
+            font-size: 25px;
+        }
+
+        h1 {
+            margin-left: 100px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            padding-right: 10px;
+            font-size: 65px;
+            color: rgb(0, 0, 0);
+        }
+
+        #BackButton {
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+            position: absolute;
+            top: 9%;
+            left: 91%;
+            transform: translate(-50%, -50%);
+            font-size: 22px;
+        }
+
+        /* for (var i = 0; i <= 4; i++) {
+
+            for (var j = 0; j <= 7; j++) {
+
+                #Button + i + j {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: (268+68*j)px;
+            left: (390 + 200*j)px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button2 + i + j {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: (300+68*j)px;
+            left: (390 + 200*j)px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+            }
+        } */
+
+        #Button11 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 268px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button12 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 300px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button13 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 336px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button14 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 368px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button15 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 404px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button16 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 436px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button17 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 472px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button18 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 504px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button19 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 540px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button110 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 572px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button111 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 608px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button112 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 640px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button113 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 676px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button114 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 708px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button115 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 744px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button116 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 776px;
+            left: 390px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button21 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 268px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button22 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 300px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button23 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 336px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button24 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 368px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button25 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 404px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button26 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 436px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button27 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 472px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button28 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 504px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button29 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 540px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button210 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 572px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button211 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 608px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button212 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 640px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button213 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 676px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button214 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 708px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button215 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 744px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button216 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 776px;
+            left: 590px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button31 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 268px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button32 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 300px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button33 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 336px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button34 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 368px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button35 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 404px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button36 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 436px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button37 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 472px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button38 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 504px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button39 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 540px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button310 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 572px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button311 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 608px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button312 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 640px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button313 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 676px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button314 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 708px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button315 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 744px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button316 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 776px;
+            left: 790px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button41 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 268px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button42 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 300px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button43 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 336px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button44 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 368px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button45 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 404px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button46 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 436px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button47 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 472px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button48 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 504px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button49 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 540px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button410 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 572px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button411 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 608px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button412 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 640px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button413 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 676px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button414 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 708px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button415 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 744px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button416 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 776px;
+            left: 990px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button51 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 268px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button52 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 300px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button53 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 336px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button54 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 368px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button55 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 404px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button56 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 436px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button57 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 472px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button58 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 504px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button59 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 540px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button510 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 572px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button511 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 608px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button512 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 640px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button513 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 676px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        #Button514 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 708px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button515 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 744px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        #Button516 {
+            width: 150px;
+            height: 30px;
+            border-radius: 8px;
+            background-color: #d01717;
+            color: #d01717;
+            position: absolute;
+            top: 776px;
+            left: 1190px;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        .custom-list {
+            list-style: none; /* Remove default list bullets */
+            float: left; /* Float the list to the left */
+            margin-right: 20px; /* Add spacing between the list and table */
+            text-align: right;
+            position: absolute;
+            top: 23.7%;
+            left: 8.5%;
+            line-height: 2.72;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Teacher Name</h1>
+
+    <table class="table-outline">
+        <thead>
+            <tr>
+                <th> Monday  </th>
+                <th> Tuesday </th>
+                <th>Wednesday</th>
+                <th> Thursday</th>
+                <th> Friday  </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="BackButton">
+        Return
+    </button>
+
+    <button id="Button11">
+    </button>
+
+    <button id="Button12">
+    </button>
+
+    <button id="Button13">
+    </button>
+
+    <button id="Button14">
+    </button>
+
+    <button id="Button15">
+    </button>
+
+    <button id="Button16">
+    </button>
+
+    <button id="Button17">
+    </button>
+
+    <button id="Button18">
+    </button>
+
+    <button id="Button19">
+    </button>
+
+    <button id="Button110">
+    </button>
+
+    <button id="Button111">
+    </button>
+
+    <button id="Button112">
+    </button>
+
+    <button id="Button113">
+    </button>
+
+    <button id="Button114">
+    </button>
+
+    <button id="Button115">
+    </button>
+
+    <button id="Button116">
+    </button>
+
+    <button id="Button21">
+    </button>
+
+    <button id="Button22">
+    </button>
+
+    <button id="Button23">
+    </button>
+
+    <button id="Button24">
+    </button>
+
+    <button id="Button25">
+    </button>
+
+    <button id="Button26">
+    </button>
+
+    <button id="Button27">
+    </button>
+
+    <button id="Button28">
+    </button>
+
+    <button id="Button29">
+    </button>
+
+    <button id="Button210">
+    </button>
+
+    <button id="Button211">
+    </button>
+
+    <button id="Button212">
+    </button>
+
+    <button id="Button213">
+    </button>
+
+    <button id="Button214">
+    </button>
+
+    <button id="Button215">
+    </button>
+
+    <button id="Button216">
+    </button>
+
+    <button id="Button31">
+    </button>
+
+    <button id="Button32">
+    </button>
+
+    <button id="Button33">
+    </button>
+
+    <button id="Button34">
+    </button>
+
+    <button id="Button35">
+    </button>
+
+    <button id="Button36">
+    </button>
+
+    <button id="Button37">
+    </button>
+
+    <button id="Button38">
+    </button>
+
+    <button id="Button39">
+    </button>
+
+    <button id="Button310">
+    </button>
+
+    <button id="Button311">
+    </button>
+
+    <button id="Button312">
+    </button>
+
+    <button id="Button313">
+    </button>
+
+    <button id="Button314">
+    </button>
+
+    <button id="Button315">
+    </button>
+
+    <button id="Button316">
+    </button>
+
+    <button id="Button41">
+    </button>
+
+    <button id="Button42">
+    </button>
+
+    <button id="Button43">
+    </button>
+
+    <button id="Button44">
+    </button>
+
+    <button id="Button45">
+    </button>
+
+    <button id="Button46">
+    </button>
+
+    <button id="Button47">
+    </button>
+
+    <button id="Button48">
+    </button>
+
+    <button id="Button49">
+    </button>
+
+    <button id="Button410">
+    </button>
+
+    <button id="Button411">
+    </button>
+
+    <button id="Button412">
+    </button>
+
+    <button id="Button413">
+    </button>
+
+    <button id="Button414">
+    </button>
+
+    <button id="Button415">
+    </button>
+
+    <button id="Button416">
+    </button>
+
+    <button id="Button51">
+    </button>
+
+    <button id="Button52">
+    </button>
+
+    <button id="Button53">
+    </button>
+
+    <button id="Button54">
+    </button>
+
+    <button id="Button55">
+    </button>
+
+    <button id="Button56">
+    </button>
+
+    <button id="Button57">
+    </button>
+
+    <button id="Button58">
+    </button>
+
+    <button id="Button59">
+    </button>
+
+    <button id="Button510">
+    </button>
+
+    <button id="Button511">
+    </button>
+
+    <button id="Button512">
+    </button>
+
+    <button id="Button513">
+    </button>
+
+    <button id="Button514">
+    </button>
+
+    <button id="Button515">
+    </button>
+
+    <button id="Button516">
+    </button>
+
+    <!-- for (var i = 0; i <= 4; i++) {
+
+        for (var j = 0; j <= 7; j++) {
+
+            <button id= "Button" + i + j>
+    </button>
+
+    <button id="Button2" + i + j>
+    </button>
+        }
+    } -->
+
+    <ul class = "custom-list">
+        <li>
+            8:00 a.m.
+        </li>
+
+        <li>
+            9:00 a.m.
+        </li>
+
+        <li>
+            10:00 a.m.
+        </li>
+
+        <li>
+            11:00 a.m.
+        </li>
+
+        <li>
+            12:00 p.m.
+        </li>
+
+        <li>
+            1:00 p.m.
+        </li>
+
+        <li>
+            2:00 p.m.
+        </li>
+
+        <li>
+            3:00 p.m.
+        </li>
+    </ul>
+
+    <script>
+       
+        var backbutton = document.getElementById("BackButton");
+    
+        backbutton.addEventListener("click", function() {
+            window.location.href = "http://127.0.0.1:5500/index.html"; 
+        });
+
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
